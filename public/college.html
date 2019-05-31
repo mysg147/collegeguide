@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CollegeGuide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: content-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: content-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.dialog{
+  display:flex;
+  flex-direction:column;
+  left:50%;
+  max-height:  90vh;
+  position:absolute;
+  top: 70%;
+  transform:translate(-50%,50%);
+}
+.dialog main{
+  overflow-y:auto;
+}
+                                                
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+   }
+   
+   slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+   }
+   
+   slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+   slide p {
+    font-family: Comfortaa;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+   }
+   
+   @keyframes slide {
+    0% { left: 100%; width: 100%; }
+    5% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; width: 100%; }
+    30.0001% { left: -100%; width: 0%; }
+    100% { left: 100%; width: 0%; }
+   }
+</style>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    
+
+
+    <ul>
+        <li>C</li>
+        <li>O</li>
+        <li>L</li>
+        <li>L</li>
+        <li>E</li>
+        <li>G</li>
+        <li>E</li>
+        <li>G</li>
+        <li>U</li>
+        <li>I</li>
+        <li>D</li>
+        <li>E</li>
+          </ul>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/college_save" method ="post">
+    <label for="fname">Name of the College</label>
+    <input type="text" id="fname" name="name" placeholder="Your  College name..">
+
+    <label for="lname">Type of course/courses </label>
+    <input type="text" id="lname" name="course" placeholder=" type of course ">
+
+    <label for="country">Location</label>
+    <select id="country" name="region">
+      <option value="australia">Delhi</option>
+      <option value="canada">Mumbai</option>
+      <option value="usa">Banglore</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <div class="dialog">
+    <label for="subject">Add discription of College</label>
+   <main> <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </main>
+    <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
