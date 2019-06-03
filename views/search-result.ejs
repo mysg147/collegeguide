@@ -1,4 +1,147 @@
+
 <html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ul{
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  ul li{
+    list-style: none;
+    color:  #484848;
+    font-family: arial;
+    font-size: 5em;
+    letter-spacing: 15px;
+    animation: ani 2.4s linear infinite;
+  }
+  @keyframes ani {
+    0%{
+      color: #484848;
+      text-shadow: none;
+    }
+    90%{
+      color: #484848;
+      text-shadow: none;
+    }
+    100%{
+      color: #fff900;
+      text-shadow: 0 0 7px #fff900,0 0 50px #ff6c00;
+    }
+  }
+  ul li:nth-child(1){
+    animation-delay: .2s;
+  }
+  ul li:nth-child(2){
+    animation-delay: .4s;
+  }
+  ul li:nth-child(3){
+    animation-delay: .8s;
+  }
+  ul li:nth-child(4){
+    animation-delay: 1s;
+  }
+  ul li:nth-child(5){
+    animation-delay: 1.2s;
+  }
+  ul li:nth-child(6){
+    animation-delay: 1.4s;
+  }
+  ul li:nth-child(7){
+    animation-delay: 1.6s;
+  }
+  ul li:nth-child(8){
+    animation-delay: 1.8s;
+  }
+  ul li:nth-child(9){
+    animation-delay: 2s;
+  }
+  ul li:nth-child(10){
+    animation-delay: 2.2s;
+  }
+  ul li:nth-child(11){
+    animation-delay: 2.4s;
+  }
+</style>
+</head>
+<body>
+    <ul>
+        <li>C</li>
+        <li>O</li>
+        <li>L</li>
+        <li>L</li>
+        <li>E</li>
+        <li>G</li>
+        <li>E</li>
+        <li>G</li>
+        <li>U</li>
+        <li>I</li>
+        <li>D</li>
+        <li>E</li>
+          </ul>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<table>
+  <tr>
+    <th>TYPE</th>
+    <th>DETAIL</th>
+    
+  </tr>
+  <tr>
+    <td>NAME</td>
+    <td><div> <%= ad.name %> </div></td>
+    
+  </tr>
+  <tr>
+    <td>COURSE</td>
+    <td><div> <%= ad.course %> </div></td>
+    
+  </tr>
+  <tr>
+    <td>CITY</td>
+    <td><div> <%= ad.country %> </div></td>
+    
+  </tr>
+  <tr>
+    <td>REVIEW</td>
+    <td><div> <%= ad.subject %> </div></td>
+    
+  </tr>
+  
+</table>
+
+</body>
+</html>
+<!--<html>
 <body>
 <div> <%= ad.name %> </div>
 <div> <%= ad.course %> </div>
@@ -6,4 +149,4 @@
 <div> <%= ad.subject %> </div>
 <p>asdfghjkl</p>
 </body>
-</html>
+</html>-->
